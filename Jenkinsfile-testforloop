@@ -5,9 +5,9 @@ pipeline {
             steps {
             sh 'echo "Hello World"'
             script {
+             def FILE
                 dir ("Folder1")
                 {
-                def FILE
                 for FILE in ${ls}
                 do
                 echo "$FILE"
