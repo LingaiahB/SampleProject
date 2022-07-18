@@ -8,7 +8,7 @@ pipeline {
                 dir ("Folder1")
                 {
                 def FILE
-                for FILE in 'ls'
+                for FILE in $(ls)
                 do
                 echo "$FILE"
                 done
